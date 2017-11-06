@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>UnJugador</servlet-name>
+        <servlet-class>es.ayesa.cursoweb.UnJugador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResultadoPartida</servlet-name>
+        <servlet-class>es.ayesa.cursoweb.ResultadoPartida</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GenerarPartida</servlet-name>
+        <servlet-class>es.ayesa.cursoweb.GenerarPartida</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UnJugador</servlet-name>
+        <url-pattern>/jugarContraLaMaquina</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResultadoPartida</servlet-name>
+        <url-pattern>/ResultadoPartida</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GenerarPartida</servlet-name>
+        <url-pattern>/GenerarPartida</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
